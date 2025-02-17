@@ -1,15 +1,18 @@
 import React from "react";
 import {Link, NavLink} from "react-router-dom"
 
+
 const Navbar = (() =>{
 
     return(
         <div>
-            <nav>
-                <Link to='/'>Fooldal</Link>
-                <NavLink to='/ermesek'>Az olimpia ermesei</NavLink>
-                <NavLink to='/mermesek'>A magyar ermesek</NavLink>
+            <nav className="bt bb tc mw7 center mt4">
+                <Link className="f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa3 ph4-l" to='/'>Fooldal</Link>
+                <NavLink className="f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa3 ph4-l" to='/ermesek'>Az olimpia ermesei</NavLink>
+                <NavLink className="f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa3 ph4-l" to='/mermesek'>A magyar ermesek</NavLink>
             </nav>
+
+
         </div>
     )
 
